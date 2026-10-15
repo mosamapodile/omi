@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic-settings
+openai
+azure-identity
+azure-cosmos
+azure-keyvault-secrets
+azure-monitor-opentelemetry
+httpx
+pytest

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>omi. — A little space to think.</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">omi.</div>
+        <span class="status">your thinking space</span>
+    </header>
+
+    <main>
+        <h1>What's on your mind?</h1>
+        <p>Ask anything. Start somewhere.</p>
+
+        <form id="chat-form">
+            <input
+                id="message"
+                type="text"
+                placeholder="Message omi..."
+                required
+            >
+            <button type="submit">↑</button>
+        </form>
+
+        <div id="response" aria-live="polite"></div>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
