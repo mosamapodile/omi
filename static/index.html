@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>omi. — A little space to think.</title>
-    <link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>omi. — A little space to think.</title>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">omi.</div>
-        <span class="status">your thinking space</span>
-    </header>
+  <header>
+    <div class="logo">omi.</div>
+    <span class="tagline">a little space to think</span>
+  </header>
 
-    <main>
-        <h1>What's on your mind?</h1>
-        <p>Ask anything. Start somewhere.</p>
+  <main>
+    <section id="welcome" class="welcome">
+      <div class="symbol">✳</div>
+      <h1>What's on your mind?</h1>
+      <p>Ask anything. Start somewhere.</p>
+    </section>
 
-        <form id="chat-form">
-            <input
-                id="message"
-                type="text"
-                placeholder="Message omi..."
-                required
-            >
-            <button type="submit">↑</button>
-        </form>
+    <section
+      id="messages"
+      class="messages"
+      aria-live="polite">
+    </section>
 
-        <div id="response" aria-live="polite"></div>
-    </main>
+    <form id="chat-form" class="composer">
+      <input
+        id="message-input"
+        type="text"
+        placeholder="Message omi..."
+        maxlength="4000"
+        required
+      >
+      <button id="send-button" type="submit">
+        ↑
+      </button>
+    </form>
 
-    <script src="/static/app.js"></script>
+    <footer>
+      <span id="status">omi is ready</span>
+      <span>made for curious minds.</span>
+    </footer>
+  </main>
+
+  <script src="/static/app.js"></script>
 </body>
 </html>

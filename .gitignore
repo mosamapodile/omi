@@ -1,34 +1,10 @@
-# Python
+.venv/
 __pycache__/
 *.py[cod]
-*.egg-info/
 .pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
-# Virtual environments
-.venv/
-venv/
-env/
-
-# Environment variables and secrets
 .env
 .env.*
 !.env.example
-*.pem
-*.key
-
-# IDEs
 .vscode/
 .idea/
-
-# Operating systems
 .DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Build artifacts
-build/
-dist/
